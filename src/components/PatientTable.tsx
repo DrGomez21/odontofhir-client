@@ -17,12 +17,12 @@ function PatientTable() {
 
   return (
     <>
-      <table className="w-[600px] rounded-lg text-[#4A4A4A] text-xl">
-        <thead className="bg-[#B3E5FC] justify-evenly">
-          <th>Paciente</th>
-          <th>Género</th>
-          <th>Nacimiento</th>
-          <th>Contacto</th>
+      <table className="table-auto min-w-full rounded-lg text-text text-lg">
+        <thead className="bg-primary justify-evenly rounded-full py-4">
+          <th scope="col" className="py-4">Paciente</th>
+          <th scope="col" className="py-4">Género</th>
+          <th scope="col" className="py-4">Nacimiento</th>
+          <th scope="col" className="py-4">Contacto</th>
         </thead>
         <tbody>
           {
