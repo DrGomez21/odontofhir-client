@@ -5,6 +5,15 @@ import { PatientRow } from "./PatientRow"
 function PatientTable() {
   const { patients } = usePatient()
 
+  if (patients.length == 0) {
+    return (
+      <div className="flex flex-col gap-2 items-center">
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Health%20Worker%20Light%20Skin%20Tone.png" alt="No hay pacientes" width="96" height="96" />
+        <span className="font-semibold text-lg">Ocurrió un error o no hay pacientes registrados.</span>
+      </div>
+    )
+  }
+
   return (
     <>
       <table className="w-[600px] rounded-lg text-[#4A4A4A] text-xl">
