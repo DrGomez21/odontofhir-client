@@ -1,0 +1,11 @@
+{
+  "name": "odontofhir_structuredefinitions",
+  "version": "0.1.0",
+  "description": "Put a description here",
+  "dependencies": {
+    "hl7.fhir.us.ccda": "1.2.0"
+  },
+  "fhirVersions": [
+    "4.0.1"
+  ]
+}
