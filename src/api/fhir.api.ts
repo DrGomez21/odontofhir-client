@@ -15,3 +15,12 @@ export const getAllPatient = async () => {
         return []
     }
 }
+
+export const deletePatient = async (id: number) => {
+    try {
+        const response = await axios.delete(`http://localhost:8080/fhir/Patient/${id}`)
+        return response
+    } catch (error) {
+        console.log(error)
+    }
+}
